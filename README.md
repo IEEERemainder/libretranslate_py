@@ -1,20 +1,20 @@
 # libretranslate_py
 ## Requirements:
-#### Python 3+, `aiohttp`, `requests`
-## Import
+Python 3+, `aiohttp`, `requests`
+Import
 ```py
 import libretranslate
 ```
 ## Example usage
-#### Synchronious
+Synchronious
 ```py
 j = libretranslate.translate_sync("http://localhost:5000", "Привет", "auto", "en")
 ```
-#### Asynchronious
+Asynchronious
 ```py
 j = await libretranslate.translate_async("http://localhost:5000", "Привет", "auto", "en")
 ```
-#### Process return value
+Process return value
 ```py
 if "translatedText" in j:
     print(j["translatedText"])
