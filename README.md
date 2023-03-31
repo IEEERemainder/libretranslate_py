@@ -21,3 +21,9 @@ if "translatedText" in j:
 else:
     print("Error:", j["error"])
 ```
+
+## TODOS
+- Add more methods
+
+## Have ideas or need help? 
+Create issue or concat me via nosare@yandex.ru or Interlocked#6505
