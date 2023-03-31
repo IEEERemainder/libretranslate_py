@@ -15,7 +15,7 @@ j = libretranslate.translate_sync("http://localhost:5000", "Привет", "auto
 j = await libretranslate.translate_async("http://localhost:5000", "Привет", "auto", "en")
 ```
 #### Process return value
-```
+```py
 if "translatedText" in j:
     print(j["translatedText"])
 else:
