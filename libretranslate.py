@@ -17,12 +17,3 @@ async def translate_async(url, q, s, d):
         params={"q":q,"source":s,"target":d,"format":"text"}
         async with session.post(get_url(url + "/translate", params)) as resp: # URL canonization fails for libretranslate for feb 2023
             return json.loads(await resp.text())
-# example usage
-# j = translate_sync("http://localhost:5000", "Привет", "auto", "en")
-# # or
-# j = await translate_async("http://localhost:5000", "Привет", "auto", "en")
-# 
-# if "translatedText" in j:
-#   print(j["translatedText"])
-# else:
-#   print(j["error"])
