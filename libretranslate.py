@@ -17,3 +17,4 @@ async def translate_async(url, q, s, d):
         params={"q":q,"source":s,"target":d,"format":"text"}
         async with session.post(get_url(url + "/translate", params)) as resp: # URL canonization fails for libretranslate for feb 2023
             return json.loads(await resp.text())
+            
